@@ -1,0 +1,13 @@
+
+SQL Stored Procedures
+
+	->It is a subroutine available to applications that access a relational database system.
+	-> Encapsulated logic that is reusable 
+
+	Example:
+		e-commerce website:
+			search for shoes and get listing with price
+			a table is there that contains all the informations of the products
+			Get All Products -> stored procedures
+			Getting just the shoes would be parameterized stored procedures
+			can also be used to update/delete/insert
