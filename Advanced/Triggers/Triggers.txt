@@ -1,0 +1,10 @@
+
+SQL Triggers	
+	Triggers are statements(set of scripts) that are executed automatically when some sort of insert/update/delete happens on the table
+	Eg: validations, logs, sending emails, etc
+
+Creating Triggers:
+	GUI approach:
+		1) use templates
+		2) right click the trigger folder, click create new
+	Or, manual create
