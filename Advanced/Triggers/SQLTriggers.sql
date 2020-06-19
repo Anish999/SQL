@@ -32,3 +32,8 @@ END
 GO
 ---- Test Trigger 2 ----
 CREATE TABLE MyDemoTable(Col1 varchar(10))
+
+SELECT * FROM MyDemoTable
+
+---DISABLE TRIGGERS ---
+DISABLE TRIGGER ALL ON DATABASE; 

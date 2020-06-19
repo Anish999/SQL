@@ -1,0 +1,16 @@
+
+SQL Computed Columns
+	These columns have values derived from other columns
+	Example:
+		-Suppose Employee table has Firstname and lastname columns and we need Fullname, 
+		we would compute the Firstname by combining First and last names witout asking 
+		users to inpu the actual "Full name"
+		-Calculating Standard Deviations and stuffs like that based on the other user inputs
+
+	Creating Computed Columns:
+		GUI based approach
+			-create new table
+			-create columns
+			-for the computed columns, go to computed column specification and add formula
+			-now edit table and see the computed column auto complete
+		Or, manually create them
