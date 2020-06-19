@@ -1,0 +1,13 @@
+
+SQL Views
+
+Views: Views are how you want data to be shown.
+	Can be created from joining multiple tables.
+
+Create View: 
+	**GUI Based: 
+	1) Right click the view folder -> create view -> Select what you want on the views
+	2) View tab -> Templates Explorer -> Select view -> Create View
+		Query tab -> Specify value for template parameters and change how you want them
+	
+	** Manually create
