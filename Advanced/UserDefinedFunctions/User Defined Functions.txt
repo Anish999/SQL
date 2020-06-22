@@ -1,0 +1,13 @@
+
+SQL User Defined Functions:
+	-Like functions in programming languages, SQL Server user-defined functions are routines that accept parameters, perfoms an action as a 
+	comlplex calculations, and return the result of that action as a value. 
+	-The return value can either be a  single scalar value or a result set.
+	
+	User defined functions can be used inline.
+
+Types of functions:
+	Scalar: returns single value
+	Table-Valued: returns a table of values
+	System: they are defined by system which can not be modified.
+	
