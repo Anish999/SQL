@@ -1,0 +1,8 @@
+
+SQL Ranking Functions:
+
+Supppose we have an employe table with columns Id, name, salary
+And we want to sort by salary and rank them. This is where ranking functions are used.
+
+Rank() and DenseRank()-->Continued RANK()
+Bucket -> NTILE(n)
