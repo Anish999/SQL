@@ -1,0 +1,5 @@
+
+SQL Grouping Sets and Common Table Expressions
+
+CTEs are Temporary tables or the common table expressions which are used to store some table values 
+	temporarily for clean coding and refactoring purposes.
