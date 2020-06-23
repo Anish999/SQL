@@ -1,0 +1,22 @@
+
+SQL Partitions:
+
+	dividing tables into smaller parts so searching can be done efficiently
+	only available in enterprise version of the SSMS
+	
+	Create database and then create partition functions
+	
+----Create Partition------
+CREATE PARTITION FUNCTION cust_part_func(int)
+AS RANGE right
+FOR VALUES (1000,2000,3000,4000,5000)
+
+---Create Schema----
+CREATE PARTITION scheme cust_part_scheme
+AS PARTITION cust_part_func
+TO (fgp1, fgp2, fgp3, fgp4, fgp5, fgp6)
+	
+	Now right click the database and go to properties
+	Create Filegroups that correspond to the names in the schema creation function
+	Create files with logical names and attach the corresponding Filegroups
+	
