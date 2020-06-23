@@ -1,0 +1,26 @@
+
+SQL FileStream
+
+	--Create database. Go to properties, create a filegroup FS_FG
+	--Create file, FS_FN f type Filestream, filegroup FS_FG and set the path
+	--Create Files folder in that path and a textfile, TEST.txt
+
+	-> Create Table
+
+CREATE TABLE FILES
+(
+DOCID UNIQUEIDENTIFIER NOT NULL ROWGUIDCOL UNIQUE DEFAULT NEWID(),
+DOC VARBINARY(MAX) FILESTREAM NULL
+)
+
+DECLARE @DOC AS VARBINARY(MAX)
+SELECT @DOC = CAST(BULKCOLUMN AS VARBINARY(MAX))
+FROM OPENROWSET(BULK 'C:\FILES\TEST.txt, SINGLE_BLOB) AS DOC
+
+INSERT INTO FILES(DOC)
+VALUES(@DOC)
+
+SELECT * FROM FILES
+SELECT DOC FROM FILES
+SELECt DOC.PathName() FROM FILES
+
